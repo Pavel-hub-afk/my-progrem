@@ -13,8 +13,6 @@ int main()
 	char f;
 	int p = 0;
 
-	
-
 	while (p != 2)
 	{
 		cout << "1 - калькулятор." << endl << "2 - выход." << endl;
@@ -31,29 +29,19 @@ int main()
 
 			switch (f)
 			{
-			case '+':
-				c = a + b;
-				break;
-			case '-':
-				c = a - b;
-				break;
-			case '*':
-				c = a * b;
-				break;
-			case '/':
-				c = a / b;
-				break;
-			default:
-				cout << "Неизвестное значение!" << endl;
-				break;
+			case '+': {c = a + b; break; };
+			case '-': {c = a - b; break; };
+			case '*': {c = a * b; break; };
+			case '/': {c = a / b; break; };
+			default: {cout << "Неизвестное значение!" << endl; break; };
 			}
 
 			cout << "Результат: " << c << endl;
+
 		}
 		if (p == 2) {
 			return 1;
 		}
-
 	}
 	return 0;
 }
